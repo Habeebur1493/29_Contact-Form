@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div id="contact-form">
+	<div>
+		<h1>Contact Us!</h1> 
+		<h4>Have a question or just want to get in touch? Let's chat.</h4> 
+	</div>
+		<p id="failure">Oopsie...message not sent.</p>  
+		<p id="success">Your message was sent successfully. Thank you!</p>
+
+		   <form method="post" action="/">
+			<div>
+		      <label for="name">
+		      	<span class="required">Name: *</span> 
+		      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+		      </label> 
+			</div>
+			<div>
+		      <label for="email">
+		      	<span class="required">Email: *</span>
+		      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+		      </label>  
+			</div>
+      <div>
+        <label for="Contact">
+          <span class="required">Contact: *</span>
+          <input type="contact" id="contact" name="contact" value="" placeholder="Your Contact" tabindex="2" required="required" />
+        </label>  
+    </div>
+			<div>		          
+		      <label for="subject">
+		      <span>Subject: </span>
+			      <select id="subject" name="subject" tabindex="4">   
+			         <option value="hello">Product Based Question</option>
+			         <option value="quote">Do you think our product is right for you?</option>  
+			         <option value="general">Do you have any suggestions</option>
+			      </select>
+		      </label>
+			</div>
+			<div>		          
+		      <label for="message">
+		      	<span class="required">Message: *</span> 
+		      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+		      </label>  
+			</div>
+			<div>		           
+		      <button name="submit" type="submit" id="submit" >SEND</button> 
+			</div>
+		   </form>
+
+	</div>
+
+
+</body>
+</html>
